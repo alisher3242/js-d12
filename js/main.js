@@ -10,10 +10,8 @@ let input = Number(prompt("Raqam kiriting"));
 let arrays = [];
 function inputNumber() {
     while (!isNaN(input)) {
+        arrays.push(input);
         input = Number(prompt("Raqam kiriting"));
-        if (!isNaN(input)) {
-            arrays.push(input);
-        }
     }   
     return arrays;
 }
